@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mouz/team/gg.com</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,20 +12,68 @@
         <h1 style="text-align: center;" class="description">MOUZ TEAM</h1>
 <nav class="panel">
 <ul class="check-list">
-<li><a href="#">О команде</a></li>
-<li><a href="#">Новости</a></li>
-<li><a href="#">Состав</a></li>
-<li><a href="#">Расписание</a></li>
-<li><a href="#">Медиа</a></li>
-<li><a href="#">Магазин</a></li>
-<li><a href="#">Контакты</a></li>
+<li id="about team"><a href="#about team">О команде</a>
+</li>
+<li id="news"><a href="#news">Новости</a></li>
+<li id="team"><a href="#team">Состав</a></li>
+<li id="schedule"><a href="#schedule">Расписание</a></li>
+<li id="media"><a href="#media">Медиа</a></li>
+<li id="shop"><a href="#shop">Магазин</a></li>
+<li id="contact"><a href="#contact">Контакты</a></li>
 </ul>
 </nav>
 
     </header>
     <main>
         <div class="container">
-            
+        <div class="card-mouz">
+        <div class="red-background">
+    <img src="https://avatars.mds.yandex.net/i?id=4a0887614bd8cac0d15559eae98f91a3_l-5256019-images-thumbs&n=13" class="img-mz" alt="main-card">
+    <div class="card-body">
+    <p class="inform">
+        MOUZ (ранее — mousesports) — немецкая киберспортивная организация. Базируется в Гамбурге <br>
+        К 2006 году mousesports была одной из крупнейших киберспортивных организаций в Европе, <br> имела подразделения 
+        по Counter-Strike, Warcraft III, Quake 4 и Unreal Tournament.
+        13 мая 2007 <br> года mousesports анонсировала слияние с Nihilum, одной из первых в мире организаций по <br>
+        World of Warcraft, после чего Nihilum стала филиалом mousesports.
+        17 декабря 2024 года MOUZ объявила о выходе из игр по League of Legends.
+</p>
+    </div>
+    <h2 class="heading">The composition of our team</h2>
+    <div class="players">
+    <img src="./img/crysstalis" class="crystallis-card" alt="карта-криссталиса">
+    <div class="crystallis-body">
+    <p class="crystallis-text">Ремко «Кристаллис» Аретс (родился 26 октября 2001 года) — нидерландский игрок, <br> 
+    который в настоящее время выступает за MOUZ на правах аренды у Tundra Esports.
+    </p>]
+        
+<button id="myButton">Подробная информация</button>
+
+<script>
+    const  button = document.getElementById('myButton');
+
+    button.addEventListener('mouseenter', () => {
+    button.style.color = 'white';     
+    button.style.backgroundColor = 'green';
+    });
+
+    button.addEventListener('mouseleave', () => {
+    button.style.color = '';          
+    button.style.backgroundColor = ''; 
+    });
+</script>
+
+    </div>
+
+    <img src="./img/midone" class="midone" alt="midone-photo">
+    <div class="midone-body">
+        <p></p>
+    </div>
+
+</div>
+    </div>
+    </div>
+</div>
         </div>
     </main>
     <footer></footer>
