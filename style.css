@@ -1,5 +1,4 @@
 
-
 nav ul {
 list-style: none;
 padding: 0;
@@ -42,8 +41,7 @@ border-radius: 5px;
 
 .red-background {
 background-color: #ff0000; 
-box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5), 0 6px 20px rgba(139, 0, 0, 0.6); /* оттенки тени */
-width: 100vw;  
+box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5), 0 6px 20px rgba(139, 0, 0, 0.6); /* оттенки тени */ 
 height: 100vh; 
 margin: 0;     
 padding: 0;
