@@ -38,14 +38,17 @@ border-radius: 5px;
 }
 
 
+body, html {
+  overflow-x: hidden; /* отключит горизонтальный скролл */
+}
+
 
 .red-background {
 background-color: #ff0000; 
 box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5), 0 6px 20px rgba(139, 0, 0, 0.6); /* оттенки тени */ 
-height: 100vh; 
+height: 113vh; 
 margin: 0;     
 padding: 0;
-overflow: hidden;
 }
 html, body {
 margin: 0;    
@@ -64,7 +67,9 @@ height: 100%;
 .crystallis-card {
     margin:0 710px;
     margin-top: 30px;
+    transition: transform 0.3s ease; 
 }
+
 
 .crystallis-text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -72,7 +77,18 @@ height: 100%;
 }
 
 .crysstalis-button {
-    margin-left: 770px;
+    margin-left: 500px;
+}
+
+
+.midone-button{
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 900px;
 }
 
 .midone-img {
@@ -82,8 +98,24 @@ height: 100%;
 
 .midone-text {
     margin-left: 650px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+
+.crystallis-card:hover, .midone-img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.inform {
+    border: 2px solid white; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border-radius: 5px; 
+    }
+
 
 
 
