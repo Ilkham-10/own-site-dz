@@ -129,3 +129,64 @@ height: 100%;
     transition: color 0.3s, background-color 0.3s;
 }
 
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 70%), 
+                url('https://mouz.gg/assets/team/mouz-logo-red.png') no-repeat center/150px;
+    color: #fff;
+    }
+
+    .panel {
+        background: rgba(226, 0, 0, 0.85); /* красный с прозрачностью */
+        padding: 15px 30px;
+        margin: 20px auto;
+        max-width: 900px;
+        border: 3px solid #E20000;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(226, 0, 0, 0.8);
+    }
+
+    .panel ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .panel ul li a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 3px;
+    }
+
+    .panel ul li a:hover {
+        color: #f44336;
+        border-color: #f44336;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 30px auto;
+        background: rgba(30, 30, 30, 0.9);
+        border: 2px solid #E20000;
+        border-radius: 15px;
+        padding: 25px 40px;
+        box-shadow: 0 0 15px #E20000;
+    }
+
+    section h2 {
+        color: #E20000;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.6;
+    }

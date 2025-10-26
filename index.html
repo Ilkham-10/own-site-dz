@@ -10,18 +10,61 @@
 <body>
     <header>
         <h1 style="text-align: center;" class="description">MOUZ TEAM</h1>
+
+
 <nav class="panel">
-<ul class="check-list">
-<li id="about team"><a href="#about team">О команде</a>
-</li>
-<li id="news"><a href="#news">Новости</a></li>
-<li id="team"><a href="#team">Состав</a></li>
-<li id="schedule"><a href="#schedule">Расписание</a></li>
-<li id="media"><a href="#media">Медиа</a></li>
-<li id="shop"><a href="#shop">Магазин</a></li>
-<li id="contact"><a href="#contact">Контакты</a></li>
-</ul>
-</nav>
+    <ul class="check-list">
+        <li><a href="#about-team">О команде</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#team">Состав</a></li>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#media">Медиа</a></li>
+        <li><a href="#shop">Магазин</a></li>
+        <li><a href="#contact">Контакты</a></li>
+    </ul>
+    </nav>
+
+    <!-- Блоки с содержимым -->
+    <section id="about-team" style="display:none;">
+    <h2>о команде Mouz</h2>
+    <p>Международный киберспортивный коллектив с богатой историей и достижениями в Dota 2.</p>
+    </section>
+
+    <section id="news" style="display:none;">
+    <h2>Новости команды</h2>
+    <p>Свежие обновления и анонсы.</p>
+    </section>
+
+    <section id="team" style="display:none;">
+    <h2>Состав команды</h2>
+    <p>Crystallis (керри) — Ремко Аретс, присоединился к команде 20 сентября 2025 года;<br>
+MidOne (мидлейнер) — Чжэн Йек Най, присоединился к команде 20 сентября 2025 года; <br>
+BOOM (оффлейнер) — Мирослав Бицан, присоединился к команде 20 сентября 2025 года; <br>
+yamich (семи-саппорт) — Даниял Лазебный, присоединился к команде 20 сентября 2025 года; <br>
+Seleri (фулл-саппорт) — Мельхиор Хилленкамп, присоединился к команде 10 апреля 2025 года. <br>
+    </section>
+
+    <section id="schedule" style="display:none;">
+    <h2>Расписание матчей Mouz Dota 2</h2>
+    <p>12 мая, 18:00 – Турнир ESL One<br>15 мая, 20:00 – Лига DPC<br>22 мая, 17:00 – Гранд-финал</p>
+    </section>
+
+    <section id="media" style="display:none;">
+    <h2>Медиа с командой</h2>
+    <p>Видео и фотоотчёты.</p>
+    </section>
+
+    <section id="shop" style="display:none;">
+    <h2>Магазин Mouz</h2>
+    <p>Официальный мерч: одежда, аксессуары, сувениры.</p>
+    </section>
+
+    <section id="contact" style="display:none;">
+    <h2>Контакты</h2>
+    <p>Связь с командой для сотрудничества и фанатов.</p>
+</section>
+
+
 
     </header>
     <main>
@@ -56,6 +99,29 @@
 MidOne начал профессиональную карьеру в Dota 2 в 2015 году, когда присоединился к составу <br> Перед этим он достиг 7 700 MMR в матчмейкинге, чем привлек к себе внимание организаций. </p>
 <a class="midone-button" id="MidOne-button" href="https://liquipedia.net/dota2/MidOne " >Подробная информация</a>
     </div>
+
+    <script>
+document.querySelectorAll('.panel a').forEach(link => {
+link.addEventListener('click', e => {
+    e.preventDefault();
+
+    const targetId = e.target.getAttribute('href').substring(1);
+
+    // Скрыть все секции
+    document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+
+    // Показать нужный
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+    targetSection.style.display = 'block';
+      // Прокрутить к блоку при необходимости
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+});
+    </script>
+
+
 <script>
 document.getElementById('myButton').onclick = function() {
     window.open('https://www.dotabuff.com/players/89819275', '_blank');
