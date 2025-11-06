@@ -292,3 +292,31 @@ body {
         max-width: 250px;
         padding:  0 20px;
     }
+
+    .divisions {
+        font-size: large;
+        text-align: center;
+        padding: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .reach {
+        font-size: large;
+        text-align: center;
+        padding: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .sponsors {
+        font-size: large;
+        text-align: center;
+        padding: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .events {
+        font-size: large;
+        text-align: center;
+        padding: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }

@@ -105,14 +105,12 @@ link.addEventListener('click', e => {
 
     const targetId = e.target.getAttribute('href').substring(1);
 
-    // Скрыть все секции
     document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
 
-    // Показать нужный
+
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
     targetSection.style.display = 'block';
-      // Прокрутить к блоку при необходимости
     targetSection.scrollIntoView({ behavior: 'smooth' });
     }
 });
@@ -169,11 +167,11 @@ document.getElementById('myButton').onclick = function() {
     <p class="information">
 История
 Организация основана в 2002 году в Берлине. Изначально представляла собой одноимённую команду по Counter-Strike.
-<br>Некоторые события из истории: <br>
+<br> <p class="events">Некоторые события из истории:</p> <br>
 К 2006 году mousesports была одной из крупнейших киберспортивных организаций в Европе и имела подразделения по Counter-Strike, Warcraft III, Quake 4 и Unreal Tournament.
 13 мая 2007 года mousesports анонсировала слияние с Nihilum, одной из первых в мире организаций по World of Warcraft, после чего Nihilum стала филиалом mousesports.
 Mousesports — один из основателей федерации G7 Teams, объединяющей ведущие киберспортивные организации во всём мире.
-<br> Подразделения: <br>
+<br> <p class="divisions">Подразделения:</p> <br>
 Организация представлена в различных игровых дисциплинах, но наиболее известна командой по Counter-Strike.  <br>Некоторые действующие подразделения: <br> 
 Counter-Strike 2;
 StarCraft II;
@@ -181,12 +179,12 @@ League of Legends;
 Street Fighter V;
 Valorant.
 17 декабря 2024 года MOUZ объявила о выходе из игр по League of Legends. 
-<br>Достижения:<br>
+<br><p class="reach">Достижения:</p><br>
 Некоторые достижения организации:
 10 октября 2024 года команда MOUZ заняла второе место на IEM Rio 2024, проиграв в финале соперникам из Natus Vincere со счётом 1:3.
 18 ноября 2024 года команда MOUZ прошла на Perfect World Shangai Major 2024 со счётом 3:0, обыграв в матч за выход Natus Vincere 2:1.
 19 июня 2025 года MOUZ победили действующих чемпионов Major Team Spirit со счётом 2:1 на Blast Austin Major 2025, выйдя в полуфинал.
-<br>Спонсоры: <br>
+<br> <p class="sponsors">Спонсоры:</p> <br>
 Некоторые спонсоры организации: Razer, Puma, HanseMerkur, Fonbet. </p>
     </section>
 
